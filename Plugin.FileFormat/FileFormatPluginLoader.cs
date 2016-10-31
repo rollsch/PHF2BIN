@@ -25,9 +25,9 @@ namespace Plugins
                 ICollection<Assembly> assemblies = new List<Assembly>(dllFileNames.Length);
                 foreach (string dllFile in dllFileNames)
                 {
-                    //AssemblyName an = AssemblyName.GetAssemblyName(dllFile);
-                    //Assembly assembly = Assembly.Load(an);
-                    //assemblies.Add(assembly);
+                    AssemblyName an = AssemblyName.GetAssemblyName(dllFile);
+                    Assembly assembly = Assembly.Load(an);
+                    assemblies.Add(assembly);
                 }
 
                 Type pluginType = typeof(Plugins.FileFormat);
