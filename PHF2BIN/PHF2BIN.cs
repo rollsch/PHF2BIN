@@ -16,6 +16,8 @@ namespace PHF2BIN
     {
         FileFormatPluginLoader pluginLoader;
 
+
+
         public PHF2BIN()
         {
             InitializeComponent();
